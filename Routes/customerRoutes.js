@@ -37,7 +37,7 @@ router.get('/',async(req,res)=>{
 router.get('/:name',async(req,res)=>{
     try{
     const name=req.params.name;
-    if(['rahul','rounak','silpa','anshu','rakesh','pushpa','Harsh'].includes(name)){
+    if(['rahul','rounak','silpa','anshu','rakesh','pushpa','harsh'].includes(name)){
         const response=await customer.find({name:name});
         console.log('customer is Valid info...');
         res.status(200).json(response);
