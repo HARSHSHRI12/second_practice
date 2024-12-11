@@ -12,6 +12,14 @@ const menuschema=new mongoose.Schema({
         type:String,
         require:true
     },
+    username:{
+        type:String,
+        required:true
+    },
+    password:{
+        type:String,
+        required:true
+    }
 });
 
 const menu=mongoose.model('menu',menuschema);
